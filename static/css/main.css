@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #f4f4f4; */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .body{
+      text-align: center;
+  }
+  .img-preview {
+      width: 256px;
+      height: 256px;
+      border: 5px solid #F8F8F8;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+      margin-top: 1em;
+      margin-bottom: 1em;    
+  }
+  
+  .img-preview>div {
+      width: 100%;
+      height: 100%;
+      background-size: 256px 256px;
+      background-repeat: no-repeat;
+      background-position: center;
+      justify-content: center;
+  }
+  
+  input[type="file"] {
+      display: none;
+  }
+
+  .Open-Camera-label{
+      display: inline-block;
+      padding: 12px 30px;
+      background: #39D2B4;
+      color: #fff;
+      font-size: 1em;
+      transition: all .4s;
+      cursor: pointer;
+  }
+  
+  .upload-label{
+      display: inline-block;
+      padding: 12px 30px;
+      background: #39D2B4;
+      color: #fff;
+      font-size: 1em;
+      transition: all .4s;
+      cursor: pointer;
+  }
+  
+  .upload-label:hover{
+      background: #34495E;
+      color: #39D2B4;
+  }
+  
+  .loader {
+      border: 8px solid #f3f3f3; /* Light grey */
+      border-top: 8px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  #optionSelector {
+    margin-bottom: 20px;
+  }
+
+  #gallery-option,
+  #camera-option {
+    display: none;
+  }
+
+  .upload-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .img-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
+  #snapshot{
+    width: 480 ;
+    height: 320;
+  }
